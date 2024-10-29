@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/contatos.png" alt="Agenda de Contatos">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-contato">
+            <input type="text" id="nome-contato" required placeholder="Nome do Contato" />
+            <input type="number" id="tel-contato" required placeholder="Telefone do Contato" />
+            <select id="tipo-contato">
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Telefone">Telefone</option>
+            </select>
+            <button type="submit"><img src="./images/adicionar.webp" alt="Adicionar contato">Add</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do Contato
+                    </th>
+                    <th>
+                        Número de Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
