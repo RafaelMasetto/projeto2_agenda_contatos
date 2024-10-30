@@ -1,4 +1,6 @@
 const form = document.getElementById('form-contato');
+const imgWhatsapp = '<img src="./images/whatsapp.jpg" alt="Logo Whatsapp">';
+const imgTelefone = '<img src="./images/telefone.png" alt="Logo Telefone">';
 
 let linhas = '';
 
@@ -17,7 +19,9 @@ function adicionaLinha() {
     let linha = '<tr>';
     linha += `<td>${inputNomeContato.value}</td>`;
     linha += `<td>${inputTelContato.value}</td>`;
-    linha += `<td>${selectTipoContato.value}</td>`;
+
+    const imgSrc = selectTipoContato.value === "Whatsapp" ? imgWhatsapp : imgTelefone;
+    linha += `<td>${imgSrc}</td>`;
     linha += '</tr>';
 
     linhas += linha;
